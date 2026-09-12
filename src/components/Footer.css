@@ -53,8 +53,8 @@
 }
 
 .footer-logo {
-  width: 40px;
-  height: 40px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   object-position: center;
   flex-shrink: 0;
@@ -72,12 +72,12 @@
 }
 
 .footer-tagline {
-  margin-top: 5px;
+  margin-top: 4px;
   color: var(--footer-maroon);
   font-family: var(--font-body, Arial, sans-serif);
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 600;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.5px;
   line-height: 1.5;
   white-space: nowrap;
 }
@@ -89,11 +89,11 @@
 
 .footer-description {
   max-width: 350px;
-  margin: 17px 0 0;
+  margin: 10px 0 0;
   color: var(--footer-muted);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.4;
 }
 
 /* =========================================
@@ -104,7 +104,7 @@
   display: flex;
   align-items: center;
   gap: 11px;
-  margin-top: 23px;
+  margin-top: 18px;
 }
 
 .footer-feature {
@@ -157,15 +157,15 @@
 .footer-heading-line {
   width: 30px;
   height: 1px;
-  margin-top: 9px;
-  margin-bottom: 17px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   background: #a77c6e;
 }
 
 .footer-col ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
 
   list-style: none;
   margin: 0;
@@ -370,12 +370,14 @@
   }
 
   .footer-logo {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
   }
 
   .footer-description {
+    margin-top: 8px;
     font-size: 11px;
+    line-height: 1.4;
   }
 
   .footer-features {
@@ -476,8 +478,8 @@
   }
 
   .footer-logo {
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
   }
 
   .footer-brand .brand-name {
@@ -485,15 +487,15 @@
   }
 
   .footer-tagline {
-    font-size: 6.5px;
-    letter-spacing: 1.4px;
+    font-size: 8px;
+    letter-spacing: 1.2px;
     white-space: normal;
   }
 
   .footer-description {
-    margin-top: 17px;
+    margin-top: 9px;
     font-size: 12px;
-    line-height: 1.55;
+    line-height: 1.4;
   }
 
   .footer-features {
@@ -533,7 +535,7 @@
   }
 
   .footer-col ul {
-    gap: 10px;
+    gap: 3px;
   }
 
   .footer-col ul a {
@@ -619,8 +621,8 @@
   }
 
   .footer-tagline {
-    font-size: 6px;
-    letter-spacing: 1.1px;
+    font-size: 7px;
+    letter-spacing: 1px;
   }
 
   .footer-col h4 {
