@@ -1,0 +1,460 @@
+/* =========================================================
+   KALAMANDIR SHIVAM — HOME PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  position: relative;
+  height: 78vh;
+  min-height: 460px;
+  max-height: 720px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-media-mobile { display: none; }
+
+.hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(43, 35, 32, 0.55) 0%,
+    rgba(43, 35, 32, 0.15) 55%,
+    rgba(43, 35, 32, 0.05) 100%
+  );
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+
+  color: var(--white);
+
+  max-width: 560px;
+  padding: 0 48px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(38px, 5.5vw, 62px);
+  line-height: 1.05;
+  color: var(--white);
+}
+
+.hero-copy .eyebrow {
+  color: #ecd9b6;
+  margin-bottom: 14px;
+}
+
+.hero-copy p:not(.eyebrow) {
+  font-size: 16px;
+  color: #f1e9de;
+
+  max-width: 460px;
+  margin-bottom: 26px;
+}
+
+
+/* =========================================================
+   SHOP BY CATEGORY
+   ========================================================= */
+
+.shop-by-category {
+  padding: 72px 0 24px;
+}
+
+.shop-by-category h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 34px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+}
+
+.category-tile {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  text-align: center;
+}
+
+.category-tile img {
+  width: 100%;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  border-radius: var(--radius);
+}
+
+.category-tile span {
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.category-tile:hover span {
+  color: var(--maroon);
+}
+
+
+/* =========================================================
+   BEST SELLER VIDEO
+   ========================================================= */
+
+.best-seller-video {
+  padding: 72px 0;
+
+  background: var(--bg-panel);
+
+  margin: 48px 0;
+}
+
+
+/*
+   IMPORTANT:
+
+   The two columns touch each other.
+   There is NO large gap between the text and video.
+*/
+
+.video-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.72fr)
+    minmax(0, 1.28fr);
+
+  column-gap: 0;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+
+/* LEFT TEXT */
+
+.video-copy {
+  width: 100%;
+
+  padding-right: 12px;
+
+  margin: 0;
+}
+
+.video-copy .eyebrow {
+  margin-bottom: 12px;
+}
+
+.video-copy h2 {
+  font-size: 34px;
+
+  line-height: 1.1;
+
+  margin: 0 0 14px;
+}
+
+.video-copy p:not(.eyebrow) {
+  color: var(--ink-soft);
+
+  max-width: 420px;
+
+  margin: 0 0 26px;
+}
+
+
+/* RIGHT VIDEO */
+
+.video-frame {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow);
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   BEST SELLERS
+   ========================================================= */
+
+.best-sellers {
+  padding: 24px 0 72px;
+}
+
+.section-head {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin-bottom: 28px;
+}
+
+.section-head h2 {
+  font-size: 32px;
+
+  margin: 0;
+}
+
+.section-head a {
+  font-size: 13.5px;
+
+  color: var(--maroon);
+}
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 28px 20px;
+}
+
+
+/* =========================================================
+   OUR STORE
+   ========================================================= */
+
+.our-store {
+  padding: 24px 0 80px;
+}
+
+.store-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 56px;
+
+  align-items: center;
+}
+
+.store-grid img {
+  width: 100%;
+
+  border-radius: var(--radius);
+
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+}
+
+.store-copy h2 {
+  font-size: 34px;
+
+  margin-bottom: 14px;
+}
+
+.store-copy p:not(.eyebrow) {
+  color: var(--ink-soft);
+
+  max-width: 420px;
+
+  margin-bottom: 18px;
+}
+
+.store-copy address {
+  display: block;
+
+  font-style: normal;
+
+  color: var(--ink-soft);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin-bottom: 26px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .category-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /*
+     On tablet we stack the video section.
+     Video comes first.
+  */
+
+  .video-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .video-copy {
+    padding-right: 0;
+  }
+
+  .video-frame {
+    order: -1;
+
+    width: 100%;
+  }
+
+
+  .store-grid {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 620px) {
+
+  /* HERO */
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero-media-desktop { display: none; }
+  .hero-media-mobile { display: block; object-position: top center; }
+
+  .hero-copy {
+    padding: 0 24px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+
+
+  /* CATEGORY */
+
+  .shop-by-category {
+    padding: 48px 0 20px;
+  }
+
+  .shop-by-category h2 {
+    font-size: 28px;
+
+    margin-bottom: 26px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px 14px;
+  }
+
+
+  /* VIDEO */
+
+  .best-seller-video {
+    padding: 48px 0;
+
+    margin: 32px 0;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .video-copy {
+    padding-right: 0;
+  }
+
+  .video-copy h2 {
+    font-size: 30px;
+  }
+
+  .video-frame {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+  }
+
+
+  /* PRODUCTS */
+
+  .best-sellers {
+    padding: 48px 0;
+  }
+
+  .section-head {
+    margin-bottom: 22px;
+  }
+
+  .section-head h2 {
+    font-size: 28px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px 14px;
+  }
+
+
+  /* STORE */
+
+  .our-store {
+    padding: 48px 0;
+  }
+
+  .store-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .store-copy h2 {
+    font-size: 30px;
+  }
+}

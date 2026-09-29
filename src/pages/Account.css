@@ -1,0 +1,64 @@
+.account-login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px;
+  background: var(--bg-panel);
+}
+.account-login-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 32px;
+  text-align: center;
+}
+.account-login-logo { width: 56px; height: 56px; object-fit: contain; border-radius: 50%; margin: 0 auto 18px; }
+.account-login-card h1 { font-size: 26px; margin-bottom: 10px; }
+.account-login-card p { color: var(--ink-soft); font-size: 13.5px; margin-bottom: 26px; }
+.account-login-card form { display: flex; flex-direction: column; gap: 12px; }
+.account-login-card input { border: 1px solid var(--line); padding: 12px 14px; border-radius: var(--radius); font-size: 14px; font-family: var(--font-body); }
+.account-login-card .btn { margin-top: 6px; }
+
+.account-page { padding: 32px 24px 90px; max-width: 900px; margin: 0 auto; }
+.account-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+.account-head h1 { font-size: 28px; margin-bottom: 4px; }
+.account-head p { color: var(--ink-soft); font-size: 13.5px; }
+
+.account-section { margin-bottom: 40px; }
+.account-section h3 { font-size: 17px; margin-bottom: 16px; }
+.muted { color: var(--ink-soft); font-size: 13.5px; }
+
+.order-row { border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-bottom: 14px; background: var(--white); }
+.order-status-track { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+.order-status-track span { font-size: 11px; padding: 5px 10px; border-radius: 12px; background: var(--bg-panel); color: var(--ink-soft); }
+.order-status-track span.is-done { background: var(--maroon); color: var(--white); }
+
+.address-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px; }
+.address-card { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; background: var(--white); font-size: 13px; }
+.address-card p { color: var(--ink-soft); margin: 6px 0 10px; }
+.address-card button { background: none; border: none; color: var(--danger); font-size: 12px; padding: 0; }
+
+.address-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 520px; }
+.address-form input { border: 1px solid var(--line); padding: 10px 12px; border-radius: var(--radius); font-size: 13.5px; }
+.address-form button { grid-column: span 2; justify-self: start; }
+
+@media (max-width: 700px) {
+  .address-list { grid-template-columns: 1fr; }
+  .address-form { grid-template-columns: 1fr; }
+  .address-form button { grid-column: 1; }
+}
+
+.account-login-card .auth-sub { margin: -2px 0 24px; }
+.auth-email-chip { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 11px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-panel); font-size: 14px; text-align: left; }
+.auth-email-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.auth-email-chip button { background: none; border: none; padding: 0; color: var(--maroon); font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; flex-shrink: 0; }
+.auth-pw { position: relative; }
+.auth-pw input { width: 100%; padding-right: 64px; }
+.auth-pw-toggle { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; padding: 4px; color: var(--ink-soft); font-size: 12.5px; cursor: pointer; }
+.auth-error { color: var(--danger); font-size: 13px; margin: 0; text-align: left; }
+.account-login-card .auth-error { margin-bottom: 0; }
+.account-login-card .auth-terms { margin: 22px 0 0; font-size: 12px; line-height: 1.5; color: var(--ink-soft); }
+.auth-terms a { color: var(--maroon); text-decoration: underline; }
+
+.auth-switch-row { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+.auth-switch-btn { background: none; border: none; padding: 0; font: inherit; font-size: 13.5px; color: var(--ink-soft); cursor: pointer; }
+.auth-switch-btn strong { color: var(--maroon); font-weight: 500; text-decoration: underline; }
